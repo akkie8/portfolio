@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createGlobalStyle } from 'styled-components';
+
+import Header from './components/Header';
+import Profile from './components/Profile';
+import Instagram from './components/Instagram';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #333333;
+    background-color: #ffffff;
+    font-size: 100%;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+    font-family: "Sawarabi Gothic";
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+
+      <Header />
+
+      <Profile />
+
+      <Instagram />
+
+    </>
   );
 }
 

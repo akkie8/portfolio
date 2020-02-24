@@ -16,6 +16,7 @@ const Wrap = styled.div`
 const TitleWrap = styled.div`
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Vollkorn';
 `;
 
 const Header: React.FC = () => {

@@ -10,10 +10,6 @@ const Wrap = styled.div`
   margin: 50px auto;
 `;
 
-const ProfileWrap = styled.div`
-  margin-bottom: 50px;
-`;
-
 const StyledAvatar = styled(Avatar)`
   && {
     margin: 0 auto 30px;
@@ -37,6 +33,7 @@ const TitleWrap = styled.div`
   margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
+  font-family: 'Vollkorn';
 `;
 
 const MainTitle = styled.div`
@@ -46,19 +43,20 @@ const MainTitle = styled.div`
   margin: 0 auto 30px;
   color: #515e64;
   border-bottom: solid 4px #515e64;
+  font-family: 'Vollkorn';
 `;
 
 const Profile: React.FC = () => {
   return (
     <Wrap>
-      <MainTitle>about me</MainTitle>
+      <MainTitle>About me</MainTitle>
       <Grid
         container
         direction="row"
         justify="space-evenly"
         alignItems="center"
       >
-        <ProfileWrap>
+        <div>
           <StyledAvatar alt="Aki Yamada" src={my_photo} />
           <TitleWrap>Aki Yamada</TitleWrap>
           <TextWrap>
@@ -69,7 +67,7 @@ const Profile: React.FC = () => {
             生産性の高いコミニケーションを意識し
             業務を最後まで逃げずに遂行致します。
           </TextWrap>
-        </ProfileWrap>
+        </div>
         <Instagram />
       </Grid>
     </Wrap>

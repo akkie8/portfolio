@@ -14,12 +14,13 @@ const MainTitle = styled.div`
   margin: 0 auto 30px;
   color: #515e64;
   border-bottom: solid 4px #515e64;
+  font-family: 'Vollkorn';
 `;
 
 const Timeline: React.FC = () => {
   return (
     <Wrap>
-      <MainTitle>career and skills</MainTitle>
+      <MainTitle>Career and Skills</MainTitle>
       <TimelineContents title="2015/05" text="ネイリストからエンジニアに転職" />
       <TimelineContents
         title="2015年05月〜（１社目）"

@@ -29,6 +29,9 @@ const GlobalStyle = createGlobalStyle`
 const StyledTypography = styled(Typography)`
   text-align: center;
   margin: 0 auto 10px;
+  && {
+    font-family: 'Vollkorn';
+  }
 `;
 
 const MainTitle = styled.div`
@@ -38,6 +41,7 @@ const MainTitle = styled.div`
   margin: 0 auto 10px;
   color: #515e64;
   border-bottom: solid 4px #515e64;
+  font-family: 'Vollkorn';
 `;
 
 const ContactWrap = styled.div`
@@ -59,7 +63,7 @@ function App() {
       <Header />
       <Profile />
       <Timeline />
-      <MainTitle>contact</MainTitle>
+      <MainTitle>Contact</MainTitle>
       <ContactWrap>
         <DMText>お仕事依頼・お問い合わせは 下記DMにて</DMText>
         <a href="https://www.instagram.com/akistagram_jp/">

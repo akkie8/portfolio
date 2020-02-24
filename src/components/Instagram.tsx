@@ -5,7 +5,6 @@ import InstagramEmbed from 'react-instagram-embed';
 const Wrap = styled.div`
   margin-bottom: 50px;
   margin: auto;
-  width: 400px;
 `;
 
 const Instagram: React.FC = () => {
@@ -13,7 +12,7 @@ const Instagram: React.FC = () => {
     <Wrap>
       <InstagramEmbed
         url="https://www.instagram.com/p/B862xVgpWpv/"
-        maxWidth={400}
+        maxWidth={200}
         hideCaption={true}
         containerTagName="div"
         protocol=""

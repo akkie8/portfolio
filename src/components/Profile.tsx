@@ -24,7 +24,7 @@ const TextWrap = styled.div`
   font-weight: bold;
   margin: auto;
   text-align: center;
-  word-break: keep-all;
+  /* word-break: keep-all; */
   margin-bottom: 10px;
 `;
 
@@ -60,8 +60,9 @@ const Profile: React.FC = () => {
           <StyledAvatar alt="Aki Yamada" src={my_photo} />
           <TitleWrap>Aki Yamada</TitleWrap>
           <TextWrap>
-            1990生まれ / フリーランス フロントエンドエンジニア / デジタルノマド
-            海外在住 / サーフタウン好き
+            1990生まれ / フリーランス <br/>
+            フロントエンドエンジニア<br />
+            デジタルノマド / 海外在住
           </TextWrap>
           <TextWrap>
             生産性の高いコミニケーションを意識し

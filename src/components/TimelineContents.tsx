@@ -23,7 +23,6 @@ const Title = styled.div`
 
 const Text = styled.div`
   font-size: 16px;
-  /* word-break: keep-all; */
   margin-bottom: 10px;
 `;
 

@@ -52,7 +52,6 @@ const ContactWrap = styled.div`
 const DMText = styled.div`
   width: 300px;
   margin: auto;
-  /* word-break: keep-all; */
   font-size: 14px;
 `;
 
